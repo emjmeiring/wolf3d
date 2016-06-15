@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "mlx.h"
+#include "../libft/libft.h"
+#include <fcntl.h>
 #define map_height 24
 #define map_width 24
 #define SCR_H 600

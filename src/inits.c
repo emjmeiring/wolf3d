@@ -6,9 +6,9 @@ void				derive_map(t_map *map)
 	int		j;
 	char	**str;
 	int		fd;
-	printf("What up\n");
+
 	str = NULL;
-	fd = open("maps.txt", O_RDONLY);
+	fd = open("map.txt", O_RDONLY);
 		if (fd < 0)
 			return ;
 	while (get_next_line(fd, str))
@@ -18,7 +18,6 @@ void				derive_map(t_map *map)
 		{
 			if (ft_isdigit(*str[j]))
 			{
-				printf("What up\n");
 				map->world_map[i][j] = ft_atoi(&(*str[j]));
 				j++;
 			}

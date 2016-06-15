@@ -89,8 +89,7 @@ static void		calculate_ray_pos_and_dir(t_map *map, int ctrl)
 
 void			play_game(t_map *map)
 {
-	int i = -1;
-	while ((++i) < 10)
+	while (1)
 	{
 		while ((++map->ctrl) < map_width)
 		{
